@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Tourism - Hotel Bookings</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+    <nav style="background-color: gold;">
+        <div class="nav-content">
+            <h1 class="logo">Bangalore Tourism</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="heritage.html">Heritage Sites</a></li>
+                <li><a href="hotels.html" class="active">Book Hotels</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="hotel-booking">
+        <h2 style="font-size: 40px; color: gold; text-shadow: 1px 1px gold;">Hotel Booking</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="inputs">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="inputs">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="inputs">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" class="inputs">
+                </div>
+                
+                <div class="form-group">
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" class="inputs">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" class="inputs">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" class="inputs">
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                        <option value="luxury">Luxury Suite</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="Breakfast">Breakfast Included: </label>
+                <select id="yo" class="inputs">
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Rating">Rating: </label>
+                <select id="yo" class="inputs">
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </main>
+
+    <footer style="background-color: gold;">
+        <p style="color: black; font-weight: bold;">&copy; 2024 Mumbai Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
